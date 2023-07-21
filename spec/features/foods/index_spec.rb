@@ -28,7 +28,7 @@ RSpec.describe "foods_path", type: :feature do
 
       expect(current_path).to eq(foods_path)
 
-      # expect(page).to have_content("You have returned 55579 results.")
+      expect(page).to have_content("You have returned 55579 results.")
       expect(page).to have_css(".food", count: 10)
 
       within(first(".food")) do
